@@ -40,6 +40,6 @@ app.put('/image',(req,res)=>{image.handleImage(req,res,db)})
 
 app.post('/image',(req,res)=>{image.handleApiCall(req,res)})
 
-app.listen(3001,()=>{
-	console.log("workng")
+app.listen(process.env.PORT || 3001,()=>{
+	console.log(`app is running on port ${process.env.PORT}`)
 })
