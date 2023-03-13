@@ -11,11 +11,11 @@ const profile = require('./controllers/profile.js')
 const db = knex({
   client: 'pg',
   connection: {
-    host : '127.0.0.1',
+    host : 'dpg-cg7367pmbg5ab7mqh0r0-a.oregon-postgres.render.com',
     port : 5432,
-    user : 'postgres',
-    password : 'Password1',
-    database : 'smart-brain'
+    user : 'postgresql_pgadmin_9xmd_user',
+    password : 'htmgvotoWr6eh7FRGJnF3crImTRoy5OA',
+    database : 'postgresql_pgadmin_9xmd'
   }
 });
 
