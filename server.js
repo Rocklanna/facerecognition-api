@@ -10,10 +10,7 @@ const profile = require('./controllers/profile.js')
 
 const db = knex({
   client: 'pg',
-  connection: {
-   connectionString:"postgres://postgresql_pgadmin_9xmd_user:htmgvotoWr6eh7FRGJnF3crImTRoy5OA@dpg-cg7367pmbg5ab7mqh0r0-a/postgresql_pgadmin_9xmd"
-   ssl:true
-  }
+  connection:"postgres://postgresql_pgadmin_9xmd_user:htmgvotoWr6eh7FRGJnF3crImTRoy5OA@dpg-cg7367pmbg5ab7mqh0r0-a/postgresql_pgadmin_9xmd"
 });
 
 const app = express();
